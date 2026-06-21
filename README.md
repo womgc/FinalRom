@@ -21,6 +21,8 @@ your device. By default the original file is left untouched and a new output
 file is written next to it. The heavy work runs in the background so the app
 stays responsive.
 
+![Demo video] (/demo.mp4)
+
 ## Important notes
 
 - You are responsible for the ROMs and files you process. Only use Final ROM
