@@ -21,7 +21,11 @@ your device. By default the original file is left untouched and a new output
 file is written next to it. The heavy work runs in the background so the app
 stays responsive.
 
-![Demo video] (/demo.mp4)
+
+
+https://github.com/user-attachments/assets/a8ea9270-d594-4aa4-9a1d-814d2031dcf9
+
+
 
 ## Important notes
 
