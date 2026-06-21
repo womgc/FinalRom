@@ -89,6 +89,11 @@ if (EXISTS "${CHD_DIR}/util/chd.cpp" AND EXISTS "${CHD_DIR}/util/chd.h")
   # Program Files and fail the whole build. We bundle this plugin via the
   # chdman_ffi_bundled_libraries variable, not via zlib's install rules, so skip
   # them. SKIP_INSTALL_ALL is honoured only by the zlib subdirectory below.
+  #
+  # zlib's example/minigzip targets default ON and compile from test/*.c, which
+  # are git-ignored (**/test/**) and thus absent on a fresh CI checkout. We only
+  # need the static lib, so force the examples off before configuring zlib.
+  set(ZLIB_BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
   set(SKIP_INSTALL_ALL ON)
   add_subdirectory("${CHD_DIR}/3rdparty/zlib" "${CMAKE_CURRENT_BINARY_DIR}/zlib")
   unset(SKIP_INSTALL_ALL)
