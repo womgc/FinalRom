@@ -1,0 +1,13 @@
+flutter_launcher_icons:
+  image_path: "android/app/src/main/ic_launcher-playstore.png"
+  android: true
+  ios: false
+  windows:
+    generate: true
+    image_path: "android/app/src/main/ic_launcher-playstore.png"
+    icon_size: 256
+  macos:
+    generate: false
+  linux:
+    generate: true
+    image_path: "android/app/src/main/ic_launcher-playstore.png"

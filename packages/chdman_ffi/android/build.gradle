@@ -1,0 +1,38 @@
+// AGP 9 + built-in Kotlin: plugins are resolved from the app's
+// settings.gradle.kts (pluginManagement), so this module must NOT pin its own
+// AGP via a buildscript classpath, and must not apply the Kotlin plugin (this
+// is a pure native C/C++ plugin). See:
+// https://docs.flutter.dev/release/breaking-changes/migrate-to-built-in-kotlin/for-plugin-authors
+plugins {
+    id "com.android.library"
+}
+
+group 'com.yasome.chdman_ffi'
+version '1.0'
+
+android {
+    namespace 'com.yasome.chdman_ffi'
+    compileSdk 34
+
+    defaultConfig {
+        minSdk 21
+        externalNativeBuild {
+            cmake {
+                // MAME chd and its codecs are C++; use the shared STL.
+                // C++20 is required: MAME's util/osd headers use concepts.
+                arguments "-DANDROID_STL=c++_shared"
+                cppFlags "-std=c++20"
+            }
+        }
+    }
+
+    // The native build. The path is relative to this build.gradle file.
+    externalNativeBuild {
+        cmake {
+            path "../src/CMakeLists.txt"
+            // No version pin: use the CMake bundled with the Android SDK/AGP
+            // (our CMakeLists only needs >= 3.10). Pinning 3.18.1 fails on SDKs
+            // that ship a different CMake (CXX1300).
+        }
+    }
+}

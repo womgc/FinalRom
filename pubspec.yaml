@@ -1,0 +1,62 @@
+name: final_rom
+description: "Final ROM - The ultimate utility for your retro ROMs."
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+
+  # AES-CTR implementation used by the 3DS decrypt/encrypt port.
+  pointycastle: ^4.0.0
+  flutter_bloc: ^9.1.1
+  bloc: ^9.2.1
+  equatable: ^2.0.8
+  file_picker: ^11.0.2
+  shared_preferences: ^2.5.5
+  path_provider: ^2.1.6
+  share_plus: 12.0.2
+  dynamic_color: ^1.8.1
+  intl: ^0.20.2
+  flutter_localizations:
+    sdk: flutter
+  path: ^1.9.1
+  logging: ^1.3.0
+  google_fonts: ^8.1.0
+  desktop_drop: ^0.7.1
+  crypto: ^3.0.7
+  ffi: ^2.1.0
+  permission_handler: ^12.0.3
+
+  # FFI bindings to the native xdelta3 library, for .xdelta ROM patches.
+  xdelta3_ffi:
+    path: packages/xdelta3_ffi
+  # FFI bindings to MAME's CHD (chdman) library, for CD CHD create/extract.
+  chdman_ffi:
+    path: packages/chdman_ffi
+  # FFI bindings to libzstd (streaming), used by the Switch NSZ feature.
+  zstd_ffi:
+    path: packages/zstd_ffi
+  go_router: ^17.3.0
+  url_launcher: ^6.3.2
+  font_awesome_flutter: ^11.0.0
+  package_info_plus: ^9.0.1
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  generate: true
+
+  uses-material-design: true

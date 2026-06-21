@@ -1,0 +1,251 @@
+{
+  "@@locale": "en",
+  "appTitle": "Final ROM",
+  "@appTitle": {
+    "description": "The title of the application"
+  },
+  "tabSingleFile": "Single File",
+  "tabThreeDs": "3DS",
+  "tabBatchMode": "Batch Mode",
+  "tabPatcher": "Patcher",
+  "tabHasher": "Hasher",
+  "btnDecrypt": "Decrypt",
+  "btnEncrypt": "Encrypt",
+  "btnCancel": "Cancel",
+  "btnClearQueue": "Clear",
+  "btnBrowse": "Browse",
+  "btnBrowseFolder": "Folder",
+  "settingsTitle": "Settings",
+  "trimPadding": "Trim trailing padding (Decrypt)",
+  "trimPaddingDesc": "Removes empty 0xFF padding from the end of the file, saving space.",
+  "outputHandling": "Output handling",
+  "outputHandlingNewFile": "Create a new file",
+  "outputHandlingOverwrite": "Overwrite original (Destructive)",
+  "outputLocation": "Output location",
+  "outputLocationNextToSource": "Next to source file",
+  "outputLocationCustom": "Custom folder",
+  "outputLocationAppDocs": "Device folder (app storage)",
+  "conflictBehavior": "If output exists",
+  "conflictAsk": "Ask",
+  "conflictOverwrite": "Overwrite",
+  "conflictRename": "Auto-rename",
+  "parallelism": "Parallelism",
+  "parallelismDesc": "Files processed at once",
+  "themeMode": "Appearance",
+  "themeSystem": "System Default",
+  "themeLight": "Light",
+  "themeDark": "Dark",
+  "dynamicColor": "Use Material You dynamic color",
+  "language": "Language",
+  "languageSystem": "System Default",
+  "statusIdle": "Idle",
+  "statusDone": "Done",
+  "statusError": "Error",
+  "statusSaving": "Saving...",
+  "statusFileSelected": "{size} MiB",
+  "@statusFileSelected": {
+    "placeholders": {
+      "size": {
+        "type": "String"
+      }
+    }
+  },
+  "trimMessage": "Trimmed {saved} bytes of padding",
+  "@trimMessage": {
+    "placeholders": {
+      "saved": {
+        "type": "String"
+      }
+    }
+  },
+  "batchSummary": "{success} succeeded, {failed} failed (in {time}s)",
+  "@batchSummary": {
+    "placeholders": {
+      "success": {
+        "type": "int"
+      },
+      "failed": {
+        "type": "int"
+      },
+      "time": {
+        "type": "String"
+      }
+    }
+  },
+  "batchProgress": "Processed {current} of {total}",
+  "@batchProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "errNoFileSelected": "No file selected",
+  "errOutputFolderNotSelected": "Output folder not selected",
+  "confirmOverwriteTitle": "Overwrite Original?",
+  "confirmOverwriteContent": "This will destructively overwrite the original ROM file. Are you sure you want to continue?",
+  "btnYes": "Yes",
+  "btnNo": "No",
+  "errInvalidRom": "Invalid 3DS ROM",
+  "fileConflictTitle": "File already exists",
+  "fileConflictContent": "The file {filename} already exists. What would you like to do?",
+  "@fileConflictContent": {
+    "placeholders": {
+      "filename": {
+        "type": "String"
+      }
+    }
+  },
+  "actionCancel": "Cancel",
+  "actionOverwrite": "Overwrite",
+  "actionRename": "Rename",
+  "queueFileProgress": "File {current} of {total}",
+  "@queueFileProgress": {
+    "placeholders": {
+      "current": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "queueDoneSummary": "{ok} of {total} done",
+  "@queueDoneSummary": {
+    "placeholders": {
+      "ok": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "queueFailuresSummary": "{failed} of {total} failed",
+  "@queueFailuresSummary": {
+    "placeholders": {
+      "failed": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "aboutTitle": "About",
+  "aboutContent": "This app runs completely offline and collects no personal data.",
+  "dragDropHintSingle": "Drop .3ds ROM file here",
+  "dragDropHintBatch": "Drop .3ds ROM files here",
+  "dragDropHintPatch": "Drop ROM or Patch file here",
+  "dragDropHintHash": "Drop file here to hash",
+  "dragDropOnly3ds": "Only .3ds files are supported",
+  "dragDropSubtext": "Release mouse to drop",
+  "romFile": "Base ROM File",
+  "patchFile": "Patch File (.ips, .ups, .bps, .ppf, .aps, .ebp, .dps, .xdelta)",
+  "btnBrowseRom": "Browse ROM",
+  "btnBrowsePatch": "Browse Patch",
+  "btnPatch": "Apply Patch",
+  "errNoPatchSelected": "No patch selected",
+  "statusPatching": "Applying patch...",
+  "fileToHash": "File to Hash",
+  "statusHashing": "Calculating hashes...",
+  "ignoreChecksum": "Ignore checksum",
+  "ignoreChecksumSubtitle": "Skip ROM and patch verification",
+  "errUnsupportedPatch": "Unsupported patch format",
+  "patchReportFormat": "Format: {format}",
+  "@patchReportFormat": {
+    "placeholders": {
+      "format": {
+        "type": "String"
+      }
+    }
+  },
+  "patchReportNoChecksums": "This format has no embedded checksums to verify.",
+  "checkOutcomePassed": "Passed",
+  "checkOutcomeSkipped": "Skipped",
+  "tabChd": "CHD",
+  "tabSwitch": "Switch",
+  "chdCreate": "Create CHD",
+  "chdExtract": "Extract CHD",
+  "btnCreate": "Create",
+  "btnExtract": "Extract",
+  "btnMerge": "Merge",
+  "btnUnmerge": "Unmerge",
+  "btnCompress": "Compress",
+  "btnDecompress": "Decompress",
+  "chdCreateHint": "Drop .cue or .bin file here",
+  "chdExtractHint": "Drop .chd file here",
+  "switchMergeTab": "Merge",
+  "switchSplitTab": "Split",
+  "switchCompressTab": "Compress",
+  "switchDecompressTab": "Decompress",
+  "switchMergeHint": "Drop base and update .nsp / .xci files here",
+  "switchUnmergeHint": "Drop a merged .nsp file here",
+  "switchCompressHint": "Drop .nsp file here",
+  "switchDecompressHint": "Drop .nsz file here",
+  "switchKeysRequired": "prod.keys is required for this operation",
+  "keysFile": "prod.keys File",
+  "btnBrowseKeys": "Browse Keys",
+  "compressionLevel": "Compression Level",
+  "statusCompressing": "Compressing...",
+  "statusExtracting": "Extracting...",
+  "statusMerging": "Merging...",
+  "statusUnmerging": "Unmerging...",
+  "statusDecompressing": "Decompressing...",
+  "unmergeSavedMessage": "Wrote {count} NSP files to {dir}",
+  "@unmergeSavedMessage": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "dir": {
+        "type": "String"
+      }
+    }
+  },
+  "unmergeMissingNcaWarning": "{count} title(s) reference NCAs missing from the source NSP",
+  "@unmergeMissingNcaWarning": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "patchCompatibilityChecking": "Verifying ROM compatibility...",
+  "patchCompatibilityCompatible": "Patch is compatible with the selected ROM",
+  "patchCompatibilityIncompatible": "Warning: ROM checksum does not match. This patch may be incompatible.",
+  "patchCompatibilityUnverifiable": "This patch format does not support pre-verification",
+  "btnShare": "Share",
+  "savedToFile": "Saved: {name}",
+  "@savedToFile": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "alreadyDecryptedMessage": "Already decrypted — no new file created",
+  "clearCache": "Clear cache",
+  "clearCacheSubtitle": "Remove temporary and cached files",
+  "cacheCleared": "Cache cleared",
+  "btnSave": "Save",
+  "btnShowInFolder": "Show in folder",
+  "statusCancelling": "Cancelling…",
+  "errInvalidFileType": "Invalid file type for the selected action",
+  "keysRequired3ds": "3dskeys.txt is required for this operation",
+  "copiedToClipboard": "Copied {label} to clipboard",
+  "@copiedToClipboard": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "chdCodecsTitle": "Compression codecs",
+  "chdCodecsHelper": "Comma-separated: cdlz, cdzl, cdfl, cdzs, none",
+  "chdHunkTitle": "Hunk size (bytes)",
+  "chdHunkHelper": "Leave empty for default"
+}
